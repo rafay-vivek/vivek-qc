@@ -1,0 +1,12 @@
+version: "3"
+services:
+  roost-docker-monitor:
+    image: zbio/roost-docker-monitor:v1
+    restart: always
+    container_name: roost-docker-monitor
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    # ports:
+    #   - "60004:60004"
+    network_mode: "host"
+
