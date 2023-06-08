@@ -11,7 +11,7 @@ spec:
   - name: ballot
     port: 80
     targetPort: 8080
-    NodePort: 30030
+    nodePort: 30030
 
 ---
 apiVersion: apps/v1
